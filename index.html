@@ -1,22 +1,29 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-</head>
-<body>
-    <h1>Hello World!!!</h1>
-    <p>I am a programmer</p>
-    <a href="about-us.html">This is a link</a>
-    <img src="attack3.png">
-    <p><b>There</b> <span style="font-size: 34px;">is another tag</span> iframe called &lt; iframe &gt; and it allows you to embed media into your website.</p>
-    <iframe src="https://scratch.mit.edu/projects/856256876/embed" 
-    allowtransparency="true" width="485" height="402" frameborder="0" 
-    scrolling="no" allowfullscreen>
-    </iframe>
-    <form>
-        
-    </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="module">
+    import * as hello from "./__target__/hello.js"
+    window.hello = hello;
+  </script>
+  <style>
+    html {
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  </style>
+  </head>
+  <title>Insert Text</title>
+<body window.onload>
+
+<h2>Hello Demo Name</h2>
+  
+<p>
+<div id = "groet">...</div>
+</p>
+<p>Your Name: <input name="name" type="text" maxlength="80" id="Name" value=""/> [Please enter your name]<br><br>
+<button onclick=hello.greet()>Refresh the greeting!</button>
+</p>
 </body>
 </html>
