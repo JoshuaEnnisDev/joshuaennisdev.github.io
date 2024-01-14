@@ -5,4 +5,4 @@ add_background_audio,add_button,add_image,add_sound,add_text,add_text_input,anim
 set_element_width,set_font_size,set_interval,set_text_color,set_text_decoration,set_timeout,up,update_text,vanish,wait}from"./wizardlib.js";var __name__="__main__";export var greet=function(){var py_name=document.getElementById("Name").value;if(py_name==""||py_name.length==0||py_name==null)document.getElementById("groet").innerHTML='<p><font color="#ff0000">Hello Anonymous, may I know yor name? Please insert it below:</font></p>';else document.getElementById("groet").innerHTML='<p><font color="#00ff00">Hello, '+
 py_name+", thank you for introducing you</font></p>"};add_background("Canvas_earth.png");add_button("Hi There!!!");
 
-//# sourceMappingURL=hello.map
+//# sourceMappingURL=index.map
