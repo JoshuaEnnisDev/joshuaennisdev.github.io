@@ -23,13 +23,8 @@ def view_all_contacts():
         print("Your contacts are empty!")
         return
 
-  # Show this first
-  # for name in contacts:
-  #    print(f"{name}'s phone number: {contacts[name]}")
-
-  # Refactor to this
-      for name, number in contacts.items():
-          print(f"{name}'s phone number: {number}")
+    for name, number in contacts.items():
+        print(f"{name}'s phone number: {number}")
 
 
 # HW 1
