@@ -66,6 +66,8 @@ contacts = {
     "Kim": "823-843-2435",
 }
 
+def input(s):
+    return s
 
 while True:
     choice = int(input(options))
