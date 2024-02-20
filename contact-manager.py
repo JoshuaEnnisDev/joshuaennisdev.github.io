@@ -1,3 +1,5 @@
+from js import document
+
 def view_all_contacts():
     if len(contacts) == 0:
         print("Your contacts are empty!")
@@ -9,7 +11,7 @@ def view_all_contacts():
 
     # Refactor to this
     for name, number in contacts.items():
-        print(f"{name}'s phone number: {number}")
+        js.document.innetHTML(f"{name}'s phone number: {number}")
 
 
 # HW 1
@@ -66,22 +68,32 @@ contacts = {
     "Kim": "823-843-2435",
 }
 
-def input(s):
-    return s
 
-while True:
-    choice = int(input(options))
-    if choice == 1:
-        view_all_contacts()
-    elif choice == 2:
-        view_contact()
-    elif choice == 3:
-        add_contact()
-    elif choice == 4:
-        update_contact()
-    elif choice == 5:
-        remove_contact()
-    elif choice == 6:
-        break
-    else:
-        print(f"{choice} is not a valid option")
+def input(s):
+    return js.window.prompt(s)
+    
+
+
+choice = int(input("Enter a number"))
+
+if choice == 1:
+    body = document.getElementById("body")
+    body.innerHTML = "Hello"
+
+# while True:
+#     choice = input("Hello")
+#     if choice == 1:
+#         view_all_contacts()
+#         break
+#     elif choice == 2:
+#         view_contact()
+#     elif choice == 3:
+#         add_contact()
+#     elif choice == 4:
+#         update_contact()
+#     elif choice == 5:
+#         remove_contact()
+#     elif choice == 6:
+#         break
+#     else:
+#         print(f"{choice} is not a valid option")
